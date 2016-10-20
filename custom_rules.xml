@@ -11,6 +11,7 @@
   <target name="cabal-armeabi-configure" unless="cabal-armeabi-configure.notRequired">
     <exec executable="arm-linux-androideabi-cabal" failonerror="true">
       <arg value="configure" />
+      <arg value="--disable-relocatable" />
       <arg value="--builddir=obj/local/armeabi" />
     </exec>
   </target>
